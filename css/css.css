@@ -1,0 +1,98 @@
+/* Customização body e @media screen para todos os documentos*/
+
+body {
+    align-items: center;
+    justify-content: center;
+    background-color: #c6e790;
+    display: flex;
+    height: 92vh;
+    margin: 0 0 55px 0;
+}
+
+
+
+/*Customização Navbar - todos os documentos*/
+
+
+/*Customização menu inferior - todos os documentos*/
+
+.nav {
+    position: fixed;
+    border-radius: 15px;
+    bottom: 10px;
+    width: 85%;
+    height: 70px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: rgb(52, 52, 52);
+    display: flex;
+    overflow-x: auto;
+}
+
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: rgb(146, 202, 240);
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.nav__link:hover {
+    background-color: #96b465;
+}
+
+.nav__link--active {
+    color: #afd275;
+}
+
+.nav__icon {
+    font-size: 18px;
+}
+
+/*Customização Carousel - index.html*/
+
+div#carouselExampleCaptions {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.carousel-inner, .carousel-item, .d-block {
+    width: 830px;
+    height: 460px;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 3em;
+    width: 3em;
+}
+
+h5, p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3em;
+    font-style: oblique;
+    color: #afd275;
+}
+
+/*Customização Formulário - registro_peso.html*/
+
+.btn {
+    background-color: rgb(44, 152, 224);
+    border-color: rgb(146, 202, 240);
+}
+
+/*Customização profile - profile.html*/
+
+.card {
+    margin-top: 10px;
+    object-fit: contain;
+}

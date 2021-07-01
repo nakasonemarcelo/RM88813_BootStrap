@@ -1,0 +1,92 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #afd275;
+    color: white;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+    color: #212121;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba( 0, 0, 0, 0.5);
+}
+
+
+.form-signin input[type="email"] {
+    height: 3em;
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.form-signin input[type="password"] {
+    height: 3em;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    
+}
+
+form>div {
+    position: relative;
+    overflow: hidden;
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 2px solid gray;
+    background: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 8px 12px;
+    outline: 0;
+}
+
+form input:valid, form textarea:valid {
+    background: white;
+}
+
+
+
+form input:focus+label, form textarea:focus+label {
+    background: #afd275;
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 70%;
+    padding: 1px 6px;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+form label {
+    transition: color 1s, right 0.5s;
+    position: absolute;
+    color: #afd275;
+    padding: 7px 6px;
+}
+
+form.go-right label {
+    top: 1px;
+    right: 100%;
+    width: 100%;
+    margin-right: -100%;
+    bottom: 1px;
+}
+
+form.go-right input:focus+label, form.go-right textarea:focus+label {
+    right: 0;
+    margin-right: 0;
+    width: 20%;
+    padding-top: 5px;
+}
